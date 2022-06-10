@@ -16,7 +16,7 @@ const Banner = () => {
             <h1 class="mb-5 text-5xl">Hello</h1>
             <h1 class="mb-5 text-5xl font-bold">This Hossain</h1>
             <h1 class="mb-5 text-4xl">Web Developer</h1>
-            <Link to="ABOUT" className="btn text-white">
+            <Link to="ABOUT" className="btn btn-outline">
               About me
             </Link>
           </div>
