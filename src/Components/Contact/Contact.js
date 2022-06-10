@@ -8,7 +8,7 @@ const Contact = () => {
         <input type="name" placeholder="Name" class="input input-bordered input-primary w-full max-w-xs" />
         <input type="email" placeholder="Email" class="input input-bordered input-primary w-full max-w-xs" />
           <textarea
-            class=" textarea textarea-primary"
+            class="textarea textarea-primary"
             placeholder="Message..."
           ></textarea>
         </div>
