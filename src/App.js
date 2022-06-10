@@ -5,6 +5,8 @@ import Blogs from "./Components/Blogs/Blogs";
 import Contact from "./Components/Contact/Contact";
 import Home from "./Components/Home/Home";
 import Navbar from "./Components/Navbar/Navbar";
+import Pagenotfound from "./Components/Pagenotfound/Pagenotfound";
+import Resume from "./Components/Resume/Resume";
 import Work from "./Components/Work/Work";
 
 function App() {
@@ -18,7 +20,8 @@ function App() {
         <Route path="/BLOGS" element={<Blogs />} />
 
         <Route path="/CONTACT" element={<Contact />} />
-        {/* <Route path="/RESUME" element={<Resume />} /> */}
+        <Route path="/RESUME" element={<Resume />} />
+        <Route path="*" element={<Pagenotfound />} />
       </Routes>
     </div>
   );

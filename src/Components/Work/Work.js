@@ -6,7 +6,7 @@ import samiha from "../IMG/Screenshot_2.png";
 const Work = () => {
   return (
     <div className=" container mx-auto grid lg:grid-cols-3">
-      <div class="card card-compact max-w-md m-2 bg-base-100 shadow-xl">
+      <div class="card card-compact max-w-md m-2 bg-base-100 hover:shadow-xl shadow-md">
         <figure>
           <img src={aitch} alt="" />
         </figure>
@@ -51,11 +51,13 @@ const Work = () => {
             capabilities to any user.
           </p>
           <div class="card-actions justify-end">
-            <button class="btn btn-primary">Details</button>
+            <label for="my-modal-1" class="btn btn-outline">
+              Details
+            </label>
           </div>
         </div>
       </div>
-      <div class="card card-compact  max-w-md m-2 bg-base-100 shadow-xl">
+      <div class="card card-compact  max-w-md m-2 bg-base-100 hover:shadow-xl shadow-md">
         <figure>
           <img src={health} alt="" />
         </figure>
@@ -99,11 +101,11 @@ const Work = () => {
             who can interact with the site.
           </p>
           <div class="card-actions justify-end">
-            <button class="btn btn-primary">Details</button>
+            <button class="btn btn-outline">Details</button>
           </div>
         </div>
       </div>
-      <div class="card card-compact max-w-md m-2 bg-base-100 shadow-xl">
+      <div class="card card-compact max-w-md m-2 bg-base-100 hover:shadow-xl shadow-md">
         <figure>
           <img src={samiha} alt="" />
         </figure>
@@ -135,8 +137,27 @@ const Work = () => {
             package and schedule an appointment at a convenient time.
           </p>
           <div class="card-actions justify-end">
-            <button class="btn btn-primary">Details</button>
+            <button class="btn btn-outline">Details</button>
           </div>
+        </div>
+      </div>
+      {/* =============================================================================================== */}
+      <input type="checkbox" id="my-modal-3" class="modal-toggle" />
+      <div class="modal">
+        <div class="modal-box relative">
+          <label
+            for="my-modal-1"
+            class="btn btn-sm btn-circle absolute right-2 top-2"
+          >
+            ✕
+          </label>
+          <h3 class="text-lg font-bold">
+            Congratulations random Interner user!
+          </h3>
+          <p class="py-4">
+            You've been selected for a chance to get one year of subscription to
+            use Wikipedia for free!
+          </p>
         </div>
       </div>
     </div>

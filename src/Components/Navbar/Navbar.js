@@ -1,7 +1,6 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../IMG/nobac.png";
-import resume from "../IMG/HOSSAIN's resume.pdf";
 
 const Navbar = () => {
   const NavMenu = (
@@ -59,7 +58,7 @@ const Navbar = () => {
           <ul class="menu menu-horizontal p-0">{NavMenu}</ul>
         </div>
         <div class="navbar-end">
-          <a href={resume}>RESUME</a>
+          <Link to="RESUME">RESUME</Link>
         </div>
       </div>
     </div>

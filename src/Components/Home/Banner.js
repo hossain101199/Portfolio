@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import myimg from "../IMG/IMG_20213220.jpg";
 const Banner = () => {
   return (
@@ -13,8 +14,11 @@ const Banner = () => {
         <div class=" container grid lg:grid-cols-2 gap-10 justify-items-center flex items-center p-6">
           <div class="col-span max-w-md text-black ">
             <h1 class="mb-5 text-5xl">Hello</h1>
-            <h1 class="mb-5 text-5xl font-bold">I'm Hossain</h1>
+            <h1 class="mb-5 text-5xl font-bold">This Hossain</h1>
             <h1 class="mb-5 text-4xl">Web Developer</h1>
+            <Link to="ABOUT" className="btn text-white">
+              About me
+            </Link>
           </div>
           <div class="col-span max-w-md">
             <div class="avatar">
